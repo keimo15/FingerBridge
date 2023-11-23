@@ -15,12 +15,6 @@ public class TouchManager : MonoBehaviour, IPointerClickHandler
         isBlack = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
         TouchBlock();
@@ -29,7 +23,7 @@ public class TouchManager : MonoBehaviour, IPointerClickHandler
 
     void TouchBlock()
     {
-        DrowBlock block = gameObject.GetComponent<DrowBlock>();
+        BWChanger block = gameObject.GetComponent<BWChanger>();
         if (isBlack)
         {
             block.ToWhiteBlock();

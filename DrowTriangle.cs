@@ -15,5 +15,10 @@ public enum Position
 public class DrowTriangle : MonoBehaviour
 {
     public Position directionPosition;
-    public BW bw;
+    bool isBlack;
+
+    void Start()
+    {
+        isBlack = true;
+    }
 }
